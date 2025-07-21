@@ -8,73 +8,90 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #000000, #111111);
+      color: #e0e0e0;
       text-align: center;
     }
-    header {
-      padding: 20px;
+    .hero {
+      padding: 40px 20px;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
     }
     h1 {
-      color: #00aaff;
-      font-size: 32px;
-    }
-    p {
-      font-size: 18px;
+      font-size: 2em;
+      color: #00bfff;
+      margin-top: 20px;
     }
     .section {
-      padding: 30px 15px;
-      border-top: 1px solid #333;
+      margin: 40px 20px;
     }
     .section h2 {
-      color: #00aaff;
+      color: #00bfff;
     }
-    .links a {
-      color: #00aaff;
+    .checklist {
+      list-style: none;
+      padding: 0;
+    }
+    .checklist li::before {
+      content: "✅ ";
+    }
+    a {
+      color: #00bfff;
       text-decoration: none;
-      display: block;
-      margin: 5px 0;
     }
-    .gif {
-      width: 100%;
-      max-width: 500px;
-      margin: 20px auto;
+    .footer {
+      margin: 40px 0;
+      font-size: 0.8em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img class="gif" src="https://media.giphy.com/media/Rkis28kMJd1aE/giphy.gif" alt="DogHat Shiba" />
-    <h1>🗢 Welcome to DogHat</h1>
-    <p>DogHat is the meme coin with a mission. Built on Solana ⚡️ | Powered by Community 💙</p>
-  </header>
+  <div class="hero">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzYxNjY1cWJ4ZzU0emg0bXFvY3ExNGQzZDJhYWh1dmltY3V6MGlmdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tXL4FHPSnVJ0A/giphy.gif" alt="DogHat Shiba" />
+    <h1>
+      🧢 Welcome to DogHat
+    </h1>
+    <p>
+      DogHat is the meme coin with a mission.<br />Built on Solana ⚡ | Powered by Community 💙
+    </p>
+  </div>
 
   <div class="section">
     <h2>🔥 Why DogHat?</h2>
-    <p>✅ Community-powered</p>
-    <p>✅ Built on Solana’s blazing speed</p>
-    <p>✅ Meme + Mission = Momentum</p>
+    <ul class="checklist">
+      <li>Community-powered</li>
+      <li>Built on Solana’s blazing speed</li>
+      <li>Meme + Mission = Momentum</li>
+    </ul>
   </div>
 
   <div class="section">
     <h2>🌐 Official Links</h2>
-    <div class="links">
-      <a href="https://www.doghatsol.com">Website: doghatsol.com</a>
-      <a href="https://x.com/DogHat100">Twitter: @DogHat100</a>
-      <a href="https://t.me/DOGHAT_SOL">Telegram Channel: @DOGHAT_SOL</a>
-      <a href="https://t.me/DogHatOfficialGroup">Telegram Group: @DogHatOfficialGroup</a>
-      <a href="mailto:contact@doghatsol.com">Email: contact@doghatsol.com</a>
-    </div>
+    <p>🌎 Website: <a href="https://doghatsol.com">doghatsol.com</a></p>
+    <p>🐾 Twitter: <a href="https://twitter.com/DogHat100">@DogHat100</a></p>
+    <p>📢 Telegram Channel: <a href="https://t.me/DOGHAT_SOL">@DOGHAT_SOL</a></p>
+    <p>💬 Telegram Group: <a href="https://t.me/DogHatOfficialGroup">@DogHatOfficialGroup</a></p>
+    <p>✉️ Email: <a href="mailto:contact@doghatsol.com">contact@doghatsol.com</a></p>
   </div>
 
   <div class="section">
     <h2>🧠 AI-Powered Innovation</h2>
-    <p>We’re building tools powered by AI to support education, addiction recovery, and community growth.</p>
-    <p>🧘 AI Chatbot for recovery & wellness</p>
-    <p>🎨 Meme Creator powered by GPT</p>
-    <p>🧰 Telegram bot moderator</p>
-    <p>🛡️ AI-powered token scanner for scam alerts</p>
+    <ul class="checklist">
+      <li>AI Chatbot for recovery & wellness 🧘‍♂️</li>
+      <li>Meme Creator powered by GPT 🎨</li>
+      <li>Telegram bot moderator 🤖</li>
+      <li>AI-powered token scanner for scam alerts 🛡️</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 DogHat – Built on Solana with ❤️
   </div>
 </body>
 </html>
