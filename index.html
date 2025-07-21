@@ -1,58 +1,130 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ميمي كريبتو</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DogHat - Meme Coin on Solana</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+    h1, h2 {
+      color: #00bfff;
+    }
+    .section {
+      margin: 30px 0;
+    }
+    .note {
+      color: gray;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+    .lang-buttons {
+      margin-bottom: 20px;
+    }
+    .lang-buttons button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #111;
+      color: #fff;
+      border: 1px solid #4fc3f7;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>موقع ميمي كريبتو</h1>
-        <nav>
-            <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">العملات</a></li>
-                <li><a href="#">المجتمع</a></li>
-                <li><a href="#">اتصل بنا</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="lang-buttons">
+    <button onclick="switchLang('en')">🇬🇧 English</button>
+    <button onclick="switchLang('es')">🇪🇸 Español</button>
+  </div>  <!-- English Section -->  <div id="lang-en">
+    <h1>🧢 Welcome to DogHat</h1>
+    <p>DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙</p>
+    <img src="https://media.tenor.com/XvAZ45wZfRgAAAAC/shiba-inu-dog.gif" alt="DogHat Animation" width="250" /><div class="section">
+  <h2>🔥 Why DogHat?</h2>
+  <p>✅ Community-powered<br>
+  ✅ Built on Solana’s blazing speed<br>
+  ✅ Meme + Mission = Momentum</p>
+</div>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h2>اكتشف عالم الميم كريبتو</h2>
-                <p>أحدث الأخبار والتحليلات حول العملات الرقمية المضحكة</p>
-                <button>استكشف الآن</button>
-            </div>
-            <div class="hero-image">
-                <img src="meme-crypto-image.jpg" alt="صورة ميمي كريبتو">
-            </div>
-        </section>
+<div class="section">
+  <h2>🌐 Official Links</h2>
+  <p>
+    🌍 Website: <a href="https://www.doghatsol.com">www.doghatsol.com</a><br>
+    🐾 Twitter: <a href="https://twitter.com/DogHat100">@DogHat100</a><br>
+    📢 Telegram Channel: <a href="https://t.me/DogHat_sol">@DogHat_sol</a><br>
+    💬 Telegram Group: <a href="https://t.me/DogHatOfficialGroup">@DogHatOfficialGroup</a><br>
+    📧 Email: <a href="mailto:contact@doghatsol.com">contact@doghatsol.com</a>
+  </p>
+</div>
 
-        <section id="coins">
-            <h2>العملات الشائعة</h2>
-            <div class="coin-grid">
-                <div class="coin-card">
-                    <img src="doge-logo.png" alt="شعار دوجكوين">
-                    <h3>دوجكوين</h3>
-                    <p>عملة ميمية مشهورة</p>
-                </div>
-                <div class="coin-card">
-                    <img src="shiba-logo.png" alt="شعار شيبا اينو">
-                    <h3>شيبا اينو</h3>
-                    <p>منافس دوجكوين</p>
-                </div>
-                <!-- أضف المزيد من العملات هنا -->
-            </div>
-        </section>
-    </main>
+<div class="section">
+  <h2>🧠 AI-Powered Innovation</h2>
+  <p>We’re building tools powered by AI to support education, addiction recovery, and community growth.</p>
+  <p>
+    🧘 AI Chatbot for recovery & wellness<br>
+    🎨 Meme Creator powered by GPT<br>
+    🤖 Telegram bot moderator<br>
+    🛡️ AI-powered token scanner for scam alerts
+  </p>
+</div>
 
-    <footer>
-        <p>&copy; 2024 ميمي كريبتو. جميع الحقوق محفوظة.</p>
-    </footer>
+<div class="note">
+  📌 DogHat is a community-driven project. Always DYOR before investing.
+</div>
 
-    <script src="script.js"></script>
-</body>
+  </div>  <!-- Spanish Section -->  <div id="lang-es" class="hidden">
+    <h1>🧢 Bienvenido a DogHat</h1>
+    <p>DogHat es la moneda meme con una misión. Construida en Solana ⚡ | Impulsada por la comunidad 💙</p>
+    <img src="https://media.tenor.com/XvAZ45wZfRgAAAAC/shiba-inu-dog.gif" alt="DogHat Animación" width="250" /><div class="section">
+  <h2>🔥 ¿Por qué DogHat?</h2>
+  <p>✅ Impulsado por la comunidad<br>
+  ✅ Construido en la velocidad de Solana<br>
+  ✅ Meme + Misión = Impulso</p>
+</div>
+
+<div class="section">
+  <h2>🌐 Enlaces Oficiales</h2>
+  <p>
+    🌍 Sitio Web: <a href="https://www.doghatsol.com">www.doghatsol.com</a><br>
+    🐾 Twitter: <a href="https://twitter.com/DogHat100">@DogHat100</a><br>
+    📢 Canal de Telegram: <a href="https://t.me/DogHat_sol">@DogHat_sol</a><br>
+    💬 Grupo de Telegram: <a href="https://t.me/DogHatOfficialGroup">@DogHatOfficialGroup</a><br>
+    📧 Correo: <a href="mailto:contact@doghatsol.com">contact@doghatsol.com</a>
+  </p>
+</div>
+
+<div class="section">
+  <h2>🧠 Innovación con IA</h2>
+  <p>Estamos desarrollando herramientas con IA para apoyar la educación, la recuperación de adicciones y el crecimiento comunitario.</p>
+  <p>
+    🧘 Chatbot de recuperación con IA<br>
+    🎨 Generador de memes con GPT<br>
+    🤖 Bot moderador para Telegram<br>
+    🛡️ Escáner de tokens para detectar estafas
+  </p>
+</div>
+
+<div class="note">
+  📌 DogHat es un proyecto impulsado por la comunidad. Siempre haz tu propia investigación antes de invertir.
+</div>
+
+  </div>  <script>
+    function switchLang(lang) {
+      document.getElementById('lang-en').style.display = (lang === 'en') ? 'block' : 'none';
+      document.getElementById('lang-es').style.display = (lang === 'es') ? 'block' : 'none';
+    }
+    // Set default
+    switchLang('en');
+  </script></body>
 </html>
