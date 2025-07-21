@@ -1,156 +1,183 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DogHat – Meme Coin on Solana</title>
   <style>
     body {
       background: black;
       color: white;
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       text-align: center;
-    }
-    .language-switch {
-      background: #111;
-      padding: 10px;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      border-bottom: 1px solid #333;
-    }
-    .language-switch button {
-      background: transparent;
-      border: 1px solid #4fc3f7;
-      color: #4fc3f7;
-      padding: 8px 16px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .section {
-      padding: 80px 20px 40px;
+      padding: 20px;
     }
     a {
       color: #4fc3f7;
       text-decoration: none;
     }
+    h1, h2 {
+      color: #00bfff;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .note {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .language-toggle {
+      margin-bottom: 20px;
+    }
     .hidden {
       display: none;
     }
     img.banner {
-      width: 90%;
+      width: 100%;
       max-width: 500px;
-      margin: 20px auto;
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #111;
+      color: #fff;
+      border: 1px solid #4fc3f7;
+      border-radius: 6px;
+      cursor: pointer;
     }
   </style>
-  <script>
-    function showLanguage(lang) {
-      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
-      document.getElementById('es').style.display = lang === 'es' ? 'block' : 'none';
-    }
-  </script>
 </head>
-<body onload="showLanguage('en')">
-  <div class="language-switch">
-    <button onclick="showLanguage('en')">🇬🇧 English</button>
-    <button onclick="showLanguage('es')">🇪🇸 Español</button>
-  </div>  <!-- English Section -->  <div id="en" class="section">
-    <h1>🧢 Welcome to <span style="color:#00BFFF">DogHat</span></h1>
-    <p>DogHat is the meme coin with a mission.<br>Built on Solana ⚡ | Powered by Community 💙</p>
-    <img src="https://www.doghatsol.com/assets/doghat-animated-banner.gif" class="banner" alt="DogHat Animation"><h2>🔥 Why DogHat?</h2>
-<p>✅ Community-powered<br>✅ Built on Solana’s blazing speed<br>✅ Meme + Mission = Momentum</p>
+<body>
+  <div class="language-toggle">
+    <button onclick="toggleLang('en')">🇬🇧 English</button>
+    <button onclick="toggleLang('es')">🇪🇸 Español</button>
+  </div>  <!-- English Content -->  <div id="lang-en">
+    <h1>🧢 Welcome to DogHat</h1>
+    <p>DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙</p>
+    <img class="banner" src="https://media.tenor.com/zBojCDbXxzYAAAAC/shiba-inu-dog.gif" alt="DogHat Shiba Animation" /><div class="section">
+  <h2>🔥 Why DogHat?</h2>
+  <p>✅ Community-powered<br>✅ Built on Solana’s blazing speed<br>✅ Meme + Mission = Momentum</p>
+</div>
 
-<h2>🌐 Official Links</h2>
-<p>
-  🌍 Website: <a href="https://www.doghatsol.com">doghatsol.com</a><br>
-  🐾 Twitter: <a href="https://twitter.com/DogHat100">@DogHat100</a><br>
-  📢 Telegram Channel: <a href="https://t.me/DogHat_sol">@DogHat_sol</a><br>
-  💬 Telegram Group: <a href="https://t.me/DogHatOfficialGroup">@DogHatOfficialGroup</a><br>
-  📧 Email: <a href="mailto:contact@doghatsol.com">contact@doghatsol.com</a>
-</p>
+<div class="section">
+  <h2>🌐 Official Links</h2>
+  <p>
+    🌍 Website: <a href="https://www.doghatsol.com">www.doghatsol.com</a><br>
+    🐾 Twitter: <a href="https://twitter.com/DogHat100">@DogHat100</a><br>
+    📢 Telegram Channel: <a href="https://t.me/DogHat_sol">@DogHat_sol</a><br>
+    💬 Telegram Group: <a href="https://t.me/DogHatOfficialGroup">@DogHatOfficialGroup</a><br>
+    📧 Email: <a href="mailto:contact@doghatsol.com">contact@doghatsol.com</a>
+  </p>
+</div>
 
-<h2>🧠 AI-Powered Innovation</h2>
-<p>
-  🧘 AI Chatbot for recovery & wellness<br>
-  🎨 Meme Creator powered by GPT<br>
-  🤖 Telegram bot moderator<br>
-  🛡️ AI-powered token scanner for scam alerts
-</p>
+<div class="section">
+  <h2>🧠 AI-Powered Innovation</h2>
+  <p>We’re building tools powered by AI to support education, addiction recovery, and community growth.</p>
+  <p>
+    🧘 AI Chatbot for recovery & wellness<br>
+    🎨 Meme Creator powered by GPT<br>
+    🤖 Telegram bot moderator<br>
+    🛡️ AI-powered token scanner for scam alerts
+  </p>
+</div>
 
-<h2>📅 Roadmap</h2>
-<p>
-  ✅ Phase 1 – Launch 🚀<br>
-  Create Token on Solana<br>
-  Launch Website<br>
-  Open Telegram & Twitter
-</p>
-<p>
-  ✅ Phase 2 – Growth 🌱<br>
-  Start meme marketing<br>
-  Reach 1,000 holders<br>
-  Apply for CoinGecko & CoinMarketCap
-</p>
-<p>
-  ✅ Phase 3 – Utilities 🧠<br>
-  Launch AI micro-tools<br>
-  Burn & staking events<br>
-  Collaborate with NFT projects
-</p>
+<div class="section">
+  <h2>📅 Roadmap</h2>
+  <p>
+    ✅ Phase 1 – Launch 🚀<br>
+    Create Token on Solana<br>
+    Launch Website<br>
+    Open Telegram & Twitter
+  </p>
+  <p>
+    ✅ Phase 2 – Growth 🌱<br>
+    Start meme marketing<br>
+    Reach 1,000 holders<br>
+    Apply for CoinGecko & CoinMarketCap
+  </p>
+  <p>
+    ✅ Phase 3 – Utilities 🧠<br>
+    Launch AI micro-tools<br>
+    Burn & staking events<br>
+    Collaborate with NFT projects
+  </p>
+</div>
 
-<p>👉 <a href="https://t.me/DogHatOfficialGroup">Join Our Telegram Community</a></p>
-<p style="font-size: 12px; color: gray;">📌 DogHat is a community-driven project. Always DYOR before investing.</p>
+<div class="section">
+  <h2>🚀 Join the Movement</h2>
+  <p>Be part of the most fun and meaningful meme coin project ever built on Solana.</p>
+  <p>👉 <a href="https://t.me/DogHatOfficialGroup">Join Our Telegram Community</a></p>
+</div>
 
-  </div>  <!-- Spanish Section -->  <div id="es" class="section hidden">
-    <h1>🧢 Bienvenido a <span style="color:#00BFFF">DogHat</span></h1>
-    <p>DogHat es la moneda meme con una misión.<br>Construida en Solana ⚡ | Impulsada por la comunidad 💙</p>
-    <img src="https://www.doghatsol.com/assets/doghat-animated-banner.gif" class="banner" alt="DogHat Animación"><h2>🔥 ¿Por qué DogHat?</h2>
-<p>✅ Impulsado por la comunidad<br>✅ Construido sobre la velocidad de Solana<br>✅ Meme + Misión = Impulso</p>
+<div class="note">📌 DogHat is a community-driven project. Always DYOR before investing.</div>
 
-<h2>🌐 Enlaces Oficiales</h2>
-<p>
-  🌍 Sitio Web: <a href="https://www.doghatsol.com">doghatsol.com</a><br>
-  🐾 Twitter: <a href="https://twitter.com/DogHat100">@DogHat100</a><br>
-  📢 Canal de Telegram: <a href="https://t.me/DogHat_sol">@DogHat_sol</a><br>
-  💬 Grupo de Telegram: <a href="https://t.me/DogHatOfficialGroup">@DogHatOfficialGroup</a><br>
-  📧 Correo: <a href="mailto:contact@doghatsol.com">contact@doghatsol.com</a>
-</p>
+  </div>  <!-- Spanish Content -->  <div id="lang-es" class="hidden">
+    <h1>🧢 Bienvenido a DogHat</h1>
+    <p>DogHat es la moneda meme con una misión. Construida en Solana ⚡ | Impulsada por la comunidad 💙</p>
+    <img class="banner" src="https://media.tenor.com/zBojCDbXxzYAAAAC/shiba-inu-dog.gif" alt="DogHat Shiba Animación" /><div class="section">
+  <h2>🔥 ¿Por qué DogHat?</h2>
+  <p>✅ Impulsado por la comunidad<br>✅ Construido en la velocidad de Solana<br>✅ Meme + Misión = Impulso</p>
+</div>
 
-<h2>🧠 Innovación con IA</h2>
-<p>
-  🧘 Chatbot de recuperación con IA<br>
-  🎨 Generador de memes con GPT<br>
-  🤖 Bot moderador para Telegram<br>
-  🛡️ Escáner de tokens para detectar estafas
-</p>
+<div class="section">
+  <h2>🌐 Enlaces Oficiales</h2>
+  <p>
+    🌍 Sitio Web: <a href="https://www.doghatsol.com">www.doghatsol.com</a><br>
+    🐾 Twitter: <a href="https://twitter.com/DogHat100">@DogHat100</a><br>
+    📢 Canal de Telegram: <a href="https://t.me/DogHat_sol">@DogHat_sol</a><br>
+    💬 Grupo de Telegram: <a href="https://t.me/DogHatOfficialGroup">@DogHatOfficialGroup</a><br>
+    📧 Correo: <a href="mailto:contact@doghatsol.com">contact@doghatsol.com</a>
+  </p>
+</div>
 
-<h2>📅 Hoja de Ruta</h2>
-<p>
-  ✅ Fase 1 – Lanzamiento 🚀<br>
-  Crear token en Solana<br>
-  Lanzar sitio web<br>
-  Abrir canales de Telegram y Twitter
-</p>
-<p>
-  ✅ Fase 2 – Crecimiento 🌱<br>
-  Iniciar marketing de memes<br>
-  Alcanzar 1,000 holders<br>
-  Aplicar para CoinGecko y CoinMarketCap
-</p>
-<p>
-  ✅ Fase 3 – Utilidades 🧠<br>
-  Lanzar herramientas con IA<br>
-  Eventos de quema y staking<br>
-  Colaborar con proyectos NFT
-</p>
+<div class="section">
+  <h2>🧠 Innovación con IA</h2>
+  <p>Estamos desarrollando herramientas con IA para apoyar la educación, la recuperación de adicciones y el crecimiento comunitario.</p>
+  <p>
+    🧘 Chatbot de recuperación con IA<br>
+    🎨 Generador de memes con GPT<br>
+    🤖 Bot moderador para Telegram<br>
+    🛡️ Escáner de tokens para detectar estafas
+  </p>
+</div>
 
-<p>👉 <a href="https://t.me/DogHatOfficialGroup">Únete a Nuestra Comunidad en Telegram</a></p>
-<p style="font-size: 12px; color: gray;">📌 DogHat es un proyecto impulsado por la comunidad. Siempre haz tu propia investigación antes de invertir.</p>
+<div class="section">
+  <h2>📅 Hoja de Ruta</h2>
+  <p>
+    ✅ Fase 1 – Lanzamiento 🚀<br>
+    Crear token en Solana<br>
+    Lanzar sitio web<br>
+    Abrir canales en Telegram y Twitter
+  </p>
+  <p>
+    ✅ Fase 2 – Crecimiento 🌱<br>
+    Iniciar marketing de memes<br>
+    Alcanzar 1,000 holders<br>
+    Aplicar para CoinGecko y CoinMarketCap
+  </p>
+  <p>
+    ✅ Fase 3 – Utilidades 🧠<br>
+    Lanzar herramientas IA<br>
+    Eventos de quema y staking<br>
+    Colaboraciones con proyectos NFT
+  </p>
+</div>
 
-  </div>
-</body>
+<div class="section">
+  <h2>🚀 Únete al Movimiento</h2>
+  <p>Participa en el proyecto de meme coin más divertido y significativo jamás creado en Solana.</p>
+  <p>👉 <a href="https://t.me/DogHatOfficialGroup">Únete a Nuestra Comunidad en Telegram</a></p>
+</div>
+
+<div class="note">📌 DogHat es un proyecto impulsado por la comunidad. Siempre haz tu propia investigación antes de invertir.</div>
+
+  </div>  <script>
+    function toggleLang(lang) {
+      document.getElementById("lang-en").classList.add("hidden");
+      document.getElementById("lang-es").classList.add("hidden");
+      document.getElementById("lang-" + lang).classList.remove("hidden");
+    }
+  </script></body>
 </html>
