@@ -1,24 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DogHat – Tokenomics</title>
+  <link rel="icon" href="https://doghatsol.com/favicon.ico" />
   <style>
     body {
       background: #000;
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 20px;
+      line-height: 1.7;
+    }
+    .section {
+      padding: 40px 20px;
     }
     .neon {
       color: #00c3ff;
-      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff;
-    }
-    a {
-      color: #00c3ff;
-      text-decoration: none;
+      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
     }
     .lang-switch {
       position: fixed;
@@ -34,49 +35,53 @@
       margin-left: 5px;
       cursor: pointer;
     }
+    .token-box {
+      background: #111;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 0 auto;
+      max-width: 500px;
+      box-shadow: 0 0 15px #00c3ff;
+    }
+    .token-box p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
   </style>
 </head>
 <body>
   <div class="lang-switch">
     <button onclick="switchLang('en')">English</button>
     <button onclick="switchLang('es')">Español</button>
-  </div>
-
-  <h1 class="neon" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</h1>
-  
-  <p data-en="Total Supply: 500,000,000 DHAT" data-es="Suministro total: 500,000,000 DHAT">
-    Total Supply: 500,000,000 DHAT
-  </p>
-  
-  <p data-en="• 40% Community Rewards & Airdrops" data-es="• 40% Recompensas y Airdrops para la comunidad">
-    • 40% Community Rewards & Airdrops
-  </p>
-
-  <p data-en="• 25% Liquidity & Exchanges" data-es="• 25% Liquidez y Exchanges">
-    • 25% Liquidity & Exchanges
-  </p>
-
-  <p data-en="• 20% Ecosystem & Development" data-es="• 20% Ecosistema y Desarrollo">
-    • 20% Ecosystem & Development
-  </p>
-
-  <p data-en="• 10% Charity Missions" data-es="• 10% Misiones benéficas">
-    • 10% Charity Missions
-  </p>
-
-  <p data-en="• 5% Team & Advisors" data-es="• 5% Equipo y Asesores">
-    • 5% Team & Advisors
-  </p>
-
-  <br />
-  <a href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
-
-  <script>
+  </div>  <div class="section">
+    <h1 class="neon" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</h1>
+    <div class="token-box">
+      <p data-en="💠 Total Supply: 500,000,000 DHAT"
+         data-es="💠 Suministro total: 500,000,000 DHAT">
+         💠 Total Supply: 500,000,000 DHAT
+      </p>
+      <p data-en="👥 50% Community Allocation"
+         data-es="👥 50% Asignación comunitaria">
+         👥 50% Community Allocation
+      </p>
+      <p data-en="💰 25% Liquidity Provision"
+         data-es="💰 25% Provisión de liquidez">
+         💰 25% Liquidity Provision
+      </p>
+      <p data-en="📰 15% Marketing & Growth"
+         data-es="📰 15% Marketing y crecimiento">
+         📰 15% Marketing & Growth
+      </p>
+      <p data-en="🔧 10% Development & AI Tools"
+         data-es="🔧 10% Desarrollo y herramientas de IA">
+         🔧 10% Development & AI Tools
+      </p>
+    </div>
+  </div>  <script>
     function switchLang(lang) {
       document.querySelectorAll('[data-' + lang + ']').forEach(el => {
         el.textContent = el.getAttribute('data-' + lang);
       });
     }
-  </script>
-</body>
+  </script></body>
 </html>
