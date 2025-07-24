@@ -1,91 +1,94 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DogHat – Tokenomics</title>
-  <link rel="icon" href="https://doghatsol.com/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tokenomics | DogHat</title>
   <style>
     body {
-      background: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Arial', sans-serif;
       text-align: center;
-      line-height: 1.7;
+      padding: 20px;
     }
-    .section {
-      padding: 40px 20px;
+    h1 {
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
     }
-    .neon {
-      color: #00c3ff;
-      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
+    .box {
+      background-color: #111;
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 400px;
+      margin: 30px auto;
+      box-shadow: 0 0 20px #00ffff;
     }
-    .lang-switch {
-      position: fixed;
-      top: 20px;
-      right: 20px;
+    .lang-buttons {
+      margin-top: 10px;
     }
-    .lang-switch button {
-      background: #00c3ff;
+    .lang-buttons button {
+      background-color: #00ffff;
       color: #000;
       border: none;
-      border-radius: 5px;
-      padding: 5px 10px;
-      margin-left: 5px;
+      padding: 8px 14px;
+      margin: 5px;
+      border-radius: 8px;
       cursor: pointer;
+      font-weight: bold;
     }
-    .token-box {
-      background: #111;
-      border-radius: 12px;
-      padding: 30px;
-      margin: 0 auto;
-      max-width: 500px;
-      box-shadow: 0 0 15px #00c3ff;
-    }
-    .token-box p {
-      margin: 10px 0;
-      font-size: 18px;
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
+  <h1 data-en="Tokenomics" data-es="Tokenómica">Tokenomics</h1>
+
+  <div class="box">
+    <p data-en="💎 Total Supply: 1,000,000,000 DHAT" data-es="💎 Suministro Total: 1,000,000,000 DHAT">
+      💎 Total Supply: 1,000,000,000 DHAT
+    </p>
+    <p data-en="👥 50% Community Allocation" data-es="👥 50% Asignación Comunitaria">
+      👥 50% Community Allocation
+    </p>
+    <p data-en="💰 25% Liquidity Provision" data-es="💰 25% Provisión de Liquidez">
+      💰 25% Liquidity Provision
+    </p>
+    <p data-en="📰 15% Marketing & Growth" data-es="📰 15% Marketing y Crecimiento">
+      📰 15% Marketing & Growth
+    </p>
+    <p data-en="🛠 10% Development & AI Tools" data-es="🛠 10% Desarrollo y herramientas de IA">
+      🛠 10% Development & AI Tools
+    </p>
+  </div>
+
+  <!-- Back to Home Button -->
+  <p>
+    <a href="index.html" 
+       data-en="⬅ Back to Home" 
+       data-es="⬅ Volver al Inicio">
+       ⬅ Back to Home
+    </a>
+  </p>
+
+  <!-- Language Switch Buttons -->
+  <div class="lang-buttons">
     <button onclick="switchLang('en')">English</button>
     <button onclick="switchLang('es')">Español</button>
-  </div>  <div class="section">
-    <h1 class="neon" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</h1>
-    <div class="token-box">
-      <p data-en="💠 Total Supply: 500,000,000 DHAT"
-         data-es="💠 Suministro total: 500,000,000 DHAT">
-         💠 Total Supply: 500,000,000 DHAT
-      </p>
-      <p data-en="👥 50% Community Allocation"
-         data-es="👥 50% Asignación comunitaria">
-         👥 50% Community Allocation
-      </p>
-      <p data-en="💰 25% Liquidity Provision"
-         data-es="💰 25% Provisión de liquidez">
-         💰 25% Liquidity Provision
-      </p>
-      <p data-en="📰 15% Marketing & Growth"
-         data-es="📰 15% Marketing y crecimiento">
-         📰 15% Marketing & Growth
-      </p>
-      <p data-en="🔧 10% Development & AI Tools"
-         data-es="🔧 10% Desarrollo y herramientas de IA">
-         🔧 10% Development & AI Tools
-      </p>
-    </div>
-  </div>  <script>
+  </div>
+
+  <!-- Script for Language Switch -->
+  <script>
     function switchLang(lang) {
       document.querySelectorAll('[data-' + lang + ']').forEach(el => {
         el.textContent = el.getAttribute('data-' + lang);
       });
-    }<p>
-  <a href="index.html" 
-     data-en="← Back to Home" 
-     data-es="← Volver al Inicio">← Back to Home</a>
-</p>
-  </script></body>
+    }
+  </script>
+</body>
 </html>
