@@ -80,3 +80,79 @@
     }
   </script></body>
 </html>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – DogHat</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      background: #00c3ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+      padding-top: 60px;
+    }
+    h1 {
+      color: #00c3ff;
+      text-align: center;
+      text-shadow: 0 0 10px #00c3ff;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('es')">Español</button>
+  </div>  <div class="content">
+    <h1 data-en="About DogHat" data-es="Sobre DogHat">About DogHat</h1><p data-en="DogHat is more than just a meme coin. It's a movement – built on Solana, fueled by community passion, and powered by innovation."
+   data-es="DogHat es más que una simple moneda meme. Es un movimiento: construido en Solana, impulsado por la pasión de la comunidad y potenciado por la innovación.">
+  DogHat is more than just a meme coin. It's a movement – built on Solana, fueled by community passion, and powered by innovation.
+</p>
+
+<p data-en="Our mission is to use crypto power to create fun, utility, and real-world impact."
+   data-es="Nuestra misión es usar el poder de las criptomonedas para crear diversión, utilidad e impacto real en el mundo.">
+  Our mission is to use crypto power to create fun, utility, and real-world impact.
+</p>
+
+<p data-en="We stand for transparency, inclusion, and decentralization. With DogHat, everyone has a voice."
+   data-es="Defendemos la transparencia, la inclusión y la descentralización. Con DogHat, todos tienen voz.">
+  We stand for transparency, inclusion, and decentralization. With DogHat, everyone has a voice.
+</p>
+
+<p data-en="Learn more about our vision on the <a href='https://doghatsol.com'>official website</a>."
+   data-es="Aprende más sobre nuestra visión en el <a href='https://doghatsol.com'>sitio web oficial</a>.">
+  Learn more about our vision on the <a href='https://doghatsol.com'>official website</a>.
+</p>
+
+  </div>  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+  </script></body>
+</html>
