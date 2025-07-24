@@ -1,8 +1,9 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DogHat – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tokenomics – DogHat</title>
   <link rel="icon" href="https://doghatsol.com/favicon.ico" />
   <style>
     body {
@@ -11,174 +12,15 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.7;
       text-align: center;
+      line-height: 1.7;
     }
     .neon {
       color: #00c3ff;
       text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
     }
     .section {
-      padding: 30px 20px;
-    }
-    .lang-switch {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-    }
-    .lang-switch button {
-      background: #00c3ff;
-      color: #000;
-      border: none;
-      border-radius: 5px;
-      padding: 5px 10px;
-      margin-left: 5px;
-      cursor: pointer;
-    }
-    .nav {
-      background: #111;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 0 10px #00c3ff;
-    }
-    .nav a {
-      margin: 0 15px;
-      color: #00c3ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <div class="lang-switch">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('es')">Español</button>
-  </div>  <div class="nav">
-    <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-    <a href="about.html" data-en="About" data-es="Acerca">About</a>
-    <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenomía">Tokenomics</a>
-    <a href="ai-tools.html" data-en="AI Tools" data-es="Herramientas AI">AI Tools</a>
-    <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
-  </div>  <div class="section">
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHo1amlkeThqaTk4OXhlY3Bodjc1NGlveTBva2FydWtoMmkwOWZrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="DogHat" width="90%" style="border-radius: 12px; box-shadow: 0 0 15px #00c3ff;" />
-  </div>  <div class="section">
-    <h1 class="neon" data-en="Welcome to DogHat" data-es="Bienvenido a DogHat">Welcome to DogHat</h1>
-    <p data-en="DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙"
-       data-es="DogHat es la moneda meme con una misión. Construido sobre Solana ⚡ | Impulsado por la comunidad 💙">
-      DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙
-    </p>
-  </div>  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
-        el.textContent = el.getAttribute('data-' + lang);
-      });
-    }
-  </script></body>
-</html>
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About – DogHat</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-    .lang-switch {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-    }
-    .lang-switch button {
-      background: #00c3ff;
-      color: #000;
-      border: none;
-      border-radius: 5px;
-      padding: 5px 10px;
-      margin-left: 5px;
-      cursor: pointer;
-    }
-    .content {
-      max-width: 800px;
-      margin: auto;
-      padding-top: 60px;
-    }
-    h1 {
-      color: #00c3ff;
-      text-align: center;
-      text-shadow: 0 0 10px #00c3ff;
-    }
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="lang-switch">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('es')">Español</button>
-  </div>  <div class="content">
-    <h1 data-en="About DogHat" data-es="Sobre DogHat">About DogHat</h1><p data-en="DogHat is more than just a meme coin. It's a movement – built on Solana, fueled by community passion, and powered by innovation."
-   data-es="DogHat es más que una simple moneda meme. Es un movimiento: construido en Solana, impulsado por la pasión de la comunidad y potenciado por la innovación.">
-  DogHat is more than just a meme coin. It's a movement – built on Solana, fueled by community passion, and powered by innovation.
-</p>
-
-<p data-en="Our mission is to use crypto power to create fun, utility, and real-world impact."
-   data-es="Nuestra misión es usar el poder de las criptomonedas para crear diversión, utilidad e impacto real en el mundo.">
-  Our mission is to use crypto power to create fun, utility, and real-world impact.
-</p>
-
-<p data-en="We stand for transparency, inclusion, and decentralization. With DogHat, everyone has a voice."
-   data-es="Defendemos la transparencia, la inclusión y la descentralización. Con DogHat, todos tienen voz.">
-  We stand for transparency, inclusion, and decentralization. With DogHat, everyone has a voice.
-</p>
-
-<p data-en="Learn more about our vision on the <a href='https://doghatsol.com'>official website</a>."
-   data-es="Aprende más sobre nuestra visión en el <a href='https://doghatsol.com'>sitio web oficial</a>.">
-  Learn more about our vision on the <a href='https://doghatsol.com'>official website</a>.
-</p>
-
-  </div>  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
-        el.textContent = el.getAttribute('data-' + lang);
-      });
-    }
-  </script></body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DogHat – Tokenomics</title>
-  <link rel="icon" href="/favicon.ico" />
-  <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-      text-align: center;
-    }
-    .neon {
-      color: #00c3ff;
-      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
-    }
-    .section {
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
     .lang-switch {
       position: fixed;
@@ -196,46 +38,47 @@
       font-weight: bold;
     }
     .btn {
+      display: inline-block;
       background: #00c3ff;
       color: #000;
       padding: 10px 20px;
-      margin-top: 30px;
+      margin-top: 20px;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
       box-shadow: 0 0 10px #00c3ff;
     }
   </style>
 </head>
 <body>
-
   <!-- Language Switch -->
   <div class="lang-switch">
     <button onclick="switchLang('en')">English</button>
     <button onclick="switchLang('es')">Español</button>
   </div>
 
-  <!-- Header -->
+  <!-- Tokenomics Content -->
   <div class="section">
-    <h1 class="neon" data-en="📊 Tokenomics" data-es="📊 Tokenómica">📊 Tokenomics</h1>
-    <p data-en="The distribution of $DHAT is designed to empower the community and fuel growth." 
-       data-es="La distribución de $DHAT está diseñada para empoderar a la comunidad y fomentar el crecimiento.">
-      The distribution of $DHAT is designed to empower the community and fuel growth.
+    <h1 class="neon" data-en="Tokenomics" data-es="Tokenomics">Tokenomics</h1>
+    <p data-en="Transparent, fair, and community-focused – the DogHat token distribution is designed for long-term impact."
+       data-es="Transparente, justa y centrada en la comunidad: la distribución de tokens DogHat está diseñada para un impacto duradero.">
+      Transparent, fair, and community-focused – the DogHat token distribution is designed for long-term impact.
     </p>
-  </div>
 
-  <!-- Tokenomics Details -->
-  <div class="section">
-    <p data-en="💠 50% Community<br>💠 25% Liquidity<br>💠 15% Marketing<br>💠 10% Development"
-       data-es="💠 50% Comunidad<br>💠 25% Liquidez<br>💠 15% Marketing<br>💠 10% Desarrollo">
-      💠 50% Community<br>💠 25% Liquidity<br>💠 15% Marketing<br>💠 10% Development
+    <h2 class="neon" data-en="Distribution" data-es="Distribución">Distribution</h2>
+    <p>
+      💠 <span data-en="50% Community" data-es="50% Comunidad">50% Community</span><br/>
+      💠 <span data-en="25% Liquidity" data-es="25% Liquidez">25% Liquidity</span><br/>
+      💠 <span data-en="15% Marketing" data-es="15% Marketing">15% Marketing</span><br/>
+      💠 <span data-en="10% Development" data-es="10% Desarrollo">10% Development</span>
     </p>
-  </div>
 
-  <!-- Back to Home -->
-  <div class="section">
-    <a href="/index.html" class="btn" data-en="← Back to Home" data-es="← Volver a inicio">← Back to Home</a>
+    <p data-en="Supply: Fixed total supply with no hidden mints or stealth taxes." 
+       data-es="Suministro: Suministro total fijo sin acuñaciones ocultas ni impuestos ocultos.">
+       Supply: Fixed total supply with no hidden mints or stealth taxes.
+    </p>
+
+    <a class="btn" href="index.html" data-en="← Back to Home" data-es="← Volver al inicio">← Back to Home</a>
   </div>
 
   <!-- Language Script -->
@@ -247,81 +90,4 @@
     }
   </script>
 </body>
-</html><!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DogHat – AI Tools</title>
-  <link rel="icon" href="/favicon.ico" />
-  <style>
-    body {
-      background: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-      text-align: center;
-    }
-    .neon {
-      color: #00c3ff;
-      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
-    }
-    .section {
-      padding: 30px 20px;
-    }
-    .lang-switch {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-    }
-    .lang-switch button {
-      background: #00c3ff;
-      color: #000;
-      border: none;
-      border-radius: 5px;
-      padding: 5px 10px;
-      margin-left: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .btn {
-      background: #00c3ff;
-      color: #000;
-      padding: 10px 20px;
-      margin-top: 30px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      box-shadow: 0 0 10px #00c3ff;
-    }
-  </style>
-</head>
-<body>  <!-- Language Switch -->  <div class="lang-switch">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('es')">Español</button>
-  </div>  <!-- Header -->  <div class="section">
-    <h1 class="neon" data-en="🤖 DogHat AI Tools" data-es="🤖 Herramientas IA de DogHat">🤖 DogHat AI Tools</h1>
-    <p data-en="Harnessing the power of AI to bring real utility and innovation to $DHAT holders."
-       data-es="Aprovechando el poder de la IA para brindar utilidad real e innovación a los poseedores de $DHAT.">
-      Harnessing the power of AI to bring real utility and innovation to $DHAT holders.
-    </p>
-  </div>  <!-- AI Tools List -->  <div class="section">
-    <p data-en="🧘 AI Chatbot for wellness & recovery<br>🎨 Meme Generator powered by GPT<br>🤖 Telegram Bot Moderator<br>🛡️ Token Scanner for scam detection"
-       data-es="🧘 Chatbot IA para bienestar y recuperación<br>🎨 Generador de memes con GPT<br>🤖 Moderador de Telegram con IA<br>🛡️ Escáner de tokens para detectar estafas">
-      🧘 AI Chatbot for wellness & recovery<br>
-      🎨 Meme Generator powered by GPT<br>
-      🤖 Telegram Bot Moderator<br>
-      🛡️ Token Scanner for scam detection
-    </p>
-  </div>  <!-- Back to Home -->  <div class="section">
-    <a href="/index.html" class="btn" data-en="← Back to Home" data-es="← Volver a inicio">← Back to Home</a>
-  </div>  <!-- Language Script -->  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
-        el.textContent = el.getAttribute('data-' + lang);
-      });
-    }
-  </script></body>
 </html>
