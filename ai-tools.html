@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DogHat – AI Tools</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .neon {
+      color: #00c3ff;
+      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff;
+    }
+    a {
+      color: #00c3ff;
+      text-decoration: none;
+    }
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      background: #00c3ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('es')">Español</button>
+  </div>
+
+  <h1 class="neon" data-en="AI-Powered Tools" data-es="Herramientas con IA">AI-Powered Tools</h1>
+
+  <p data-en="DogHat goes beyond memes by integrating smart AI tools for the community." 
+     data-es="DogHat va más allá de los memes al integrar herramientas inteligentes de IA para la comunidad.">
+    DogHat goes beyond memes by integrating smart AI tools for the community.
+  </p>
+
+  <p data-en="🚀 AI Meme Generator (coming soon)" 
+     data-es="🚀 Generador de Memes con IA (próximamente)">
+    🚀 AI Meme Generator (coming soon)
+  </p>
+
+  <p data-en="🤖 DogHat Chatbot Assistant (community help & fun)" 
+     data-es="🤖 Asistente Chatbot de DogHat (ayuda y diversión para la comunidad)">
+    🤖 DogHat Chatbot Assistant (community help & fun)
+  </p>
+
+  <p data-en="🔍 AI Scam Detector for Solana tokens (in development)" 
+     data-es="🔍 Detector de Estafas con IA para tokens de Solana (en desarrollo)">
+    🔍 AI Scam Detector for Solana tokens (in development)
+  </p>
+
+  <br />
+  <a href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+  </script>
+</body>
+</html>
