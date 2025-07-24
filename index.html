@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tokenomics – DogHat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DogHat – Home</title>
   <link rel="icon" href="https://doghatsol.com/favicon.ico" />
   <style>
     body {
@@ -12,15 +11,28 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
       line-height: 1.7;
+      text-align: center;
     }
     .neon {
       color: #00c3ff;
       text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
     }
     .section {
-      padding: 40px 20px;
+      padding: 30px 20px;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #111;
+      padding: 15px 0;
+      box-shadow: 0 0 10px #00c3ff;
+    }
+    .nav a {
+      color: #00ffb3;
+      text-decoration: none;
+      font-weight: bold;
     }
     .lang-switch {
       position: fixed;
@@ -35,59 +47,32 @@
       padding: 5px 10px;
       margin-left: 5px;
       cursor: pointer;
-      font-weight: bold;
-    }
-    .btn {
-      display: inline-block;
-      background: #00c3ff;
-      color: #000;
-      padding: 10px 20px;
-      margin-top: 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 0 10px #00c3ff;
     }
   </style>
 </head>
 <body>
-  <!-- Language Switch -->
   <div class="lang-switch">
     <button onclick="switchLang('en')">English</button>
     <button onclick="switchLang('es')">Español</button>
-  </div>
-
-  <!-- Tokenomics Content -->
-  <div class="section">
-    <h1 class="neon" data-en="Tokenomics" data-es="Tokenomics">Tokenomics</h1>
-    <p data-en="Transparent, fair, and community-focused – the DogHat token distribution is designed for long-term impact."
-       data-es="Transparente, justa y centrada en la comunidad: la distribución de tokens DogHat está diseñada para un impacto duradero.">
-      Transparent, fair, and community-focused – the DogHat token distribution is designed for long-term impact.
+  </div>  <div class="nav">
+    <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+    <a href="about.html" data-en="About" data-es="Acerca">About</a>
+    <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</a>
+    <a href="ai-tools.html" data-en="AI Tools" data-es="Herramientas IA">AI Tools</a>
+    <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
+  </div>  <div class="section">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHo1amlkeThqaTk4OXhlY3Bodjc1NGlveTBva2FydWtoMmkwOWZrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="DogHat" width="90%" style="border-radius: 12px; box-shadow: 0 0 15px #00c3ff;" />
+  </div>  <div class="section">
+    <h1 class="neon" data-en="Welcome to DogHat" data-es="Bienvenido a DogHat">Welcome to DogHat</h1>
+    <p data-en="DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙"
+       data-es="DogHat es la moneda meme con una misión. Construido sobre Solana ⚡ | Impulsado por la comunidad 💙">
+      DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙
     </p>
-
-    <h2 class="neon" data-en="Distribution" data-es="Distribución">Distribution</h2>
-    <p>
-      💠 <span data-en="50% Community" data-es="50% Comunidad">50% Community</span><br/>
-      💠 <span data-en="25% Liquidity" data-es="25% Liquidez">25% Liquidity</span><br/>
-      💠 <span data-en="15% Marketing" data-es="15% Marketing">15% Marketing</span><br/>
-      💠 <span data-en="10% Development" data-es="10% Desarrollo">10% Development</span>
-    </p>
-
-    <p data-en="Supply: Fixed total supply with no hidden mints or stealth taxes." 
-       data-es="Suministro: Suministro total fijo sin acuñaciones ocultas ni impuestos ocultos.">
-       Supply: Fixed total supply with no hidden mints or stealth taxes.
-    </p>
-
-    <a class="btn" href="index.html" data-en="← Back to Home" data-es="← Volver al inicio">← Back to Home</a>
-  </div>
-
-  <!-- Language Script -->
-  <script>
+  </div>  <script>
     function switchLang(lang) {
       document.querySelectorAll('[data-' + lang + ']').forEach(el => {
         el.textContent = el.getAttribute('data-' + lang);
       });
     }
-  </script>
-</body>
+  </script></body>
 </html>
