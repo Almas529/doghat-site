@@ -3,98 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DogHat – Home</title>
+  <title>DogHat</title>
   <style>
     body {
-      background-color: #000;
+      background-color: black;
       color: white;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       text-align: center;
-      margin: 0;
-      padding: 0;
     }
-
-    nav {
-      background-color: #000;
-      padding: 20px;
-      border-bottom: 2px solid cyan;
-    }
-
     nav a {
       margin: 0 15px;
       color: cyan;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
     }
-
-    .lang-buttons {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-    }
-
-    .lang-buttons button {
-      margin: 0 2px;
-      padding: 4px 10px;
-      background: cyan;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .main-box {
-      margin-top: 50px;
-      padding: 20px;
-    }
-
     .glow-title {
-      font-size: 28px;
+      font-size: 2rem;
       color: cyan;
-      text-shadow: 0 0 15px cyan;
-      margin-bottom: 10px;
+      text-shadow: 0 0 10px cyan;
+      margin-top: 2rem;
     }
-
-    .gif-image {
-      max-width: 95%;
-      margin-top: 20px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px cyan;
+    .main-box {
+      margin-top: 40px;
     }
-
     .back-to-top {
       display: inline-block;
-      margin-top: 2rem;
+      margin-top: 20px;
       color: cyan;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
+    }
+    .lang-buttons {
+      margin-top: 20px;
+    }
+    .lang-buttons button {
+      margin: 0 5px;
+      padding: 8px 15px;
+      background-color: cyan;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-      <a href="about.html" data-en="About" data-es="Acerca">About</a>
-      <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</a>
-      <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
-    </nav>
+  <nav>
+    <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+    <a href="about.html" data-en="About" data-es="Acerca">About</a>
+    <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</a>
+    <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
+  </nav>
 
-    <div class="lang-buttons">
-      <button onclick="switchLang('en')">EN</button>
-      <button onclick="switchLang('es')">ES</button>
-    </div>
-  </header>
+  <div class="lang-buttons">
+    <button onclick="switchLang('en')">EN</button>
+    <button onclick="switchLang('es')">ES</button>
+  </div>
 
   <div class="main-box">
     <h1 class="glow-title" data-en="Welcome to DogHat!" data-es="¡Bienvenido a DogHat!">Welcome to DogHat!</h1>
-    <p data-en="The most stylish meme coin built on Solana." data-es="La moneda meme más elegante en Solana.">
+    <p data-en="The most stylish meme coin built on Solana." data-es="La moneda meme más elegante construida en Solana.">
       The most stylish meme coin built on Solana.
     </p>
 
-    <img class="gif-image" src="https://media.tenor.com/eY45F61Dp7gAAAAC/dog-computer.gif" alt="DogHat Meme" />
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHolamIkeThqaTk4OXQZ3ZzY45F61Dp7gAAAC/dog-computer-gif.gif" 
+         alt="DogHat Meme GIF" 
+         style="max-width: 90%; border-radius: 15px; box-shadow: 0 0 20px cyan; margin-top: 20px;" />
 
     <br />
     <a href="#top" class="back-to-top" data-en="← Back to Top" data-es="← Volver arriba">← Back to Top</a>
