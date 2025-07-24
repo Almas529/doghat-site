@@ -1,76 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>About – DogHat</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
-      color: #fff;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
     }
-    nav {
-      background: #0a0a0a;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #00c3ff;
+    h1 {
+      color: cyan;
+      text-shadow: 0 0 10px cyan;
     }
-    nav a {
-      color: #00c3ff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
+    .box {
+      background-color: #111;
+      border: 2px solid cyan;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 30px;
+      display: inline-block;
+      text-align: left;
+      box-shadow: 0 0 20px cyan;
     }
-    .lang-switch button {
-      background: #00c3ff;
-      color: #000;
+    .lang-buttons {
+      margin-top: 20px;
+    }
+    .lang-buttons button {
+      background-color: cyan;
       border: none;
-      border-radius: 5px;
-      padding: 5px 10px;
-      margin-left: 5px;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 8px;
+      font-weight: bold;
       cursor: pointer;
     }
-    .content {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .neon {
-      color: #00c3ff;
-      text-shadow: 0 0 10px #00c3ff;
+    a {
+      color: cyan;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
+  <h1 data-en="About DogHat" data-es="Acerca de DogHat">About DogHat</h1>
 
-  <nav>
-    <div>
-      <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-      <a href="about.html" data-en="About" data-es="Acerca">About</a>
-      <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenomía">Tokenomics</a>
-      <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
-    </div>
-    <div class="lang-switch">
-      <button onclick="switchLang('en')">EN</button>
-      <button onclick="switchLang('es')">ES</button>
-    </div>
-  </nav>
-
-  <div class="content">
-    <h1 class="neon" data-en="About DogHat" data-es="Acerca de DogHat">About DogHat</h1>
-    <p data-en="DogHat is not just another meme coin. It's a movement powered by the community, built on the lightning-fast Solana blockchain." 
-       data-es="DogHat no es solo otra moneda meme. Es un movimiento impulsado por la comunidad, construido en la cadena de bloques Solana.">
-       DogHat is not just another meme coin. It's a movement powered by the community, built on the lightning-fast Solana blockchain.
+  <div class="box">
+    <p data-en="DogHat is not just another meme coin. It's a movement powered by the community, built on the lightning-fast Solana blockchain."
+       data-es="DogHat no es solo otra moneda meme. Es un movimiento impulsado por la comunidad y construido sobre la rápida blockchain de Solana.">
+      DogHat is not just another meme coin. It's a movement powered by the community, built on the lightning-fast Solana blockchain.
     </p>
-
-    <p data-en="Our mission includes supporting real-world causes like helping the homeless and funding addiction recovery programs." 
-       data-es="Nuestra misión incluye apoyar causas reales como ayudar a las personas sin hogar y financiar programas de recuperación de adicciones.">
-       Our mission includes supporting real-world causes like helping the homeless and funding addiction recovery programs.
+    <p data-en="Our mission includes supporting real-world causes like helping the homeless and funding addiction recovery programs."
+       data-es="Nuestra misión incluye apoyar causas reales como ayudar a personas sin hogar y financiar programas de recuperación de adicciones.">
+      Our mission includes supporting real-world causes like helping the homeless and funding addiction recovery programs.
     </p>
+  </div>
+
+  <a href="index.html"
+     data-en="← Back to Home"
+     data-es="← Volver al Inicio">
+    ← Back to Home
+  </a>
+
+  <div class="lang-buttons">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('es')">Español</button>
   </div>
 
   <script>
@@ -80,6 +77,5 @@
       });
     }
   </script>
-
 </body>
 </html>
