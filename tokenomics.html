@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DogHat – Tokenomics</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .neon {
+      color: #00c3ff;
+      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff;
+    }
+    a {
+      color: #00c3ff;
+      text-decoration: none;
+    }
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      background: #00c3ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('es')">Español</button>
+  </div>
+
+  <h1 class="neon" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</h1>
+  
+  <p data-en="Total Supply: 500,000,000 DHAT" data-es="Suministro total: 500,000,000 DHAT">
+    Total Supply: 500,000,000 DHAT
+  </p>
+  
+  <p data-en="• 40% Community Rewards & Airdrops" data-es="• 40% Recompensas y Airdrops para la comunidad">
+    • 40% Community Rewards & Airdrops
+  </p>
+
+  <p data-en="• 25% Liquidity & Exchanges" data-es="• 25% Liquidez y Exchanges">
+    • 25% Liquidity & Exchanges
+  </p>
+
+  <p data-en="• 20% Ecosystem & Development" data-es="• 20% Ecosistema y Desarrollo">
+    • 20% Ecosystem & Development
+  </p>
+
+  <p data-en="• 10% Charity Missions" data-es="• 10% Misiones benéficas">
+    • 10% Charity Missions
+  </p>
+
+  <p data-en="• 5% Team & Advisors" data-es="• 5% Equipo y Asesores">
+    • 5% Team & Advisors
+  </p>
+
+  <br />
+  <a href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+  </script>
+</body>
+</html>
