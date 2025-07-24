@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,112 +7,85 @@
     body {
       background-color: #000;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       text-align: center;
-      margin: 0;
       padding: 20px;
     }
-
     .glow-title {
       font-size: 2.5em;
-      color: cyan;
-      text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-      margin-top: 50px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
     }
-
-    .lang-buttons button {
-      margin: 10px;
+    .button-glow {
+      margin-top: 20px;
       padding: 10px 20px;
-      font-weight: bold;
+      background-color: #00ffff;
       border: none;
       border-radius: 5px;
-      background-color: cyan;
+      font-weight: bold;
       color: black;
       cursor: pointer;
-    }
-
-    .back-to-top {
-      margin-top: 2rem;
-      color: cyan;
-      font-weight: bold;
-      display: inline-block;
       text-decoration: none;
     }
-
+    .lang-buttons button {
+      margin: 5px;
+      padding: 8px 12px;
+      font-weight: bold;
+      border: none;
+      background-color: #00ffff;
+      color: black;
+      border-radius: 6px;
+      cursor: pointer;
+    }
     img {
-      max-width: 300px;
-      width: 90%;
-      margin-top: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px cyan;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #00ffff;
+      margin: 20px auto;
     }
-
-    nav {
-      margin-top: 20px;
+    ul {
+      text-align: left;
+      max-width: 500px;
+      margin: 20px auto;
     }
-
-    nav a {
-      margin: 0 15px;
-      color: cyan;
-      text-decoration: none;
-      font-weight: bold;
+    footer {
+      margin-top: 40px;
+      color: gray;
+      font-size: 12px;
     }
   </style>
 </head>
 <body>
-
-  <nav>
-    <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-    <a href="about.html" data-en="About" data-es="Acerca">About</a>
-    <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</a>
-    <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
-  </nav><a href="tokenomics.html" class="button-glow">🚀 Learn More</a>
-<h2 data-en="Why DogHat?" data-es="¿Por qué DogHat?">Why DogHat?</h2>
-<ul>
-  <li data-en="🔥 Built on Solana – Fast, cheap, and secure" data-es="🔥 Construido en Solana – Rápido, barato y seguro">
-    🔥 Built on Solana – Fast, cheap, and secure
-  </li>
-  <li data-en="🎨 Unique Shiba branding with meme power" data-es="🎨 Marca única de Shiba con poder meme">
-    🎨 Unique Shiba branding with meme power
-  </li>
-  <li data-en="🤖 AI tools and community bots" data-es="🤖 Herramientas de IA y bots comunitarios">
-    🤖 AI tools and community bots
-  </li>
-</ul>
-  <div class="lang-buttons">
+  <nav class="lang-buttons">
     <button onclick="switchLang('en')">EN</button>
     <button onclick="switchLang('es')">ES</button>
-  </div>
+  </nav>  <h1 class="glow-title" data-en="Welcome to DogHat!" data-es="¡Bienvenido a DogHat!">Welcome to DogHat!</h1>  <p data-en="The most stylish meme coin built on Solana." data-es="La moneda meme más elegante construida en Solana.">
+    The most stylish meme coin built on Solana.
+  </p>  <img src="https://tenor.com/eY45F61Dp7g.gif" alt="DogHat Meme GIF" />  <p data-en="DogHat is not just a meme coin — it's a movement. Powered by community, creativity, and utility on the Solana blockchain." 
+     data-es="DogHat no es solo una moneda meme — es un movimiento. Impulsado por la comunidad, la creatividad y la utilidad en la blockchain de Solana.">
+    DogHat is not just a meme coin — it's a movement. Powered by community, creativity, and utility on the Solana blockchain.
+  </p><a href="tokenomics.html" class="button-glow" data-en="🚀 Learn More" data-es="🚀 Saber Más">🚀 Learn More</a>
 
-  <div class="main-box">
-    <h1 class="glow-title" data-en="Welcome to DogHat!" data-es="¡Bienvenido a DogHat!">
-      Welcome to DogHat!
-    </h1>
-    <p data-en="The most stylish meme coin built on Solana." data-es="La moneda meme más elegante construida en Solana.">
-      The most stylish meme coin built on Solana.
-    </p>
+  <h2 data-en="Why DogHat?" data-es="¿Por qué DogHat?">Why DogHat?</h2>
+  <ul>
+    <li data-en="🔥 Built on Solana – Fast, cheap, and secure" data-es="🔥 Construido en Solana – Rápido, barato y seguro">
+      🔥 Built on Solana – Fast, cheap, and secure
+    </li>
+    <li data-en="🎨 Unique Shiba branding with meme power" data-es="🎨 Marca única de Shiba con poder meme">
+      🎨 Unique Shiba branding with meme power
+    </li>
+    <li data-en="🤖 AI tools and community bots" data-es="🤖 Herramientas de IA y bots comunitarios">
+      🤖 AI tools and community bots
+    </li>
+  </ul><a href="#top" class="button-glow" data-en="← Back to Top" data-es="← Volver arriba">← Back to Top</a>
 
-    <!-- ✅ صورة GIF الرسمية -->
-    <img
-      src="https://media2.giphy.com/media/mCRJDo24UvJMA/giphy.gif"
-      alt="DogHat Meme GIF"
-    />
-
-    <br />
-    <a href="#top" class="back-to-top" data-en="← Back to Top" data-es="← Volver arriba">
-      ← Back to Top
-    </a>
-  </div>
-
-  <script>
+  <footer>
+    <p>© 2025 DogHat. All rights reserved.</p>
+  </footer>  <script>
     function switchLang(lang) {
       document.querySelectorAll('[data-' + lang + ']').forEach(el => {
         el.textContent = el.getAttribute('data-' + lang);
       });
     }
-  </script>
-</body>
+  </script></body>
 </html>
