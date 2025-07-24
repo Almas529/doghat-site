@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -6,65 +7,72 @@
   <style>
     body {
       background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
       margin: 0;
       padding: 0;
     }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
+
+    nav {
       background-color: #000;
+      padding: 20px;
       border-bottom: 2px solid cyan;
     }
+
     nav a {
-      margin: 0 1rem;
+      margin: 0 15px;
       color: cyan;
       text-decoration: none;
       font-weight: bold;
+      font-size: 18px;
     }
+
     .lang-buttons {
-      display: flex;
-      gap: 0.5rem;
+      position: absolute;
+      top: 20px;
+      right: 20px;
     }
+
     .lang-buttons button {
-      padding: 0.5rem 1rem;
-      font-weight: bold;
-      background-color: #00e0ff;
+      margin: 0 2px;
+      padding: 4px 10px;
+      background: cyan;
       border: none;
       border-radius: 5px;
+      font-weight: bold;
       cursor: pointer;
     }
+
     .main-box {
-      margin: 3rem auto;
-      padding: 2rem;
-      max-width: 600px;
-      background-color: #111;
-      border: 2px solid cyan;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 0 15px cyan;
+      margin-top: 50px;
+      padding: 20px;
     }
-    .main-box img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+
     .glow-title {
+      font-size: 28px;
       color: cyan;
-      font-size: 2rem;
-      text-shadow: 0 0 10px cyan;
+      text-shadow: 0 0 15px cyan;
+      margin-bottom: 10px;
     }
+
+    .gif-image {
+      max-width: 95%;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px cyan;
+    }
+
     .back-to-top {
+      display: inline-block;
       margin-top: 2rem;
       color: cyan;
       font-weight: bold;
-      display: inline-block;
       text-decoration: none;
     }
   </style>
 </head>
+
 <body>
   <header>
     <nav>
@@ -73,24 +81,31 @@
       <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</a>
       <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
     </nav>
+
     <div class="lang-buttons">
       <button onclick="switchLang('en')">EN</button>
       <button onclick="switchLang('es')">ES</button>
     </div>
-  </header>  <div class="main-box">
+  </header>
+
+  <div class="main-box">
     <h1 class="glow-title" data-en="Welcome to DogHat!" data-es="¡Bienvenido a DogHat!">Welcome to DogHat!</h1>
-    <p data-en="The most stylish meme coin built on Solana." data-es="La moneda meme más elegante construida sobre Solana.">
+    <p data-en="The most stylish meme coin built on Solana." data-es="La moneda meme más elegante en Solana.">
       The most stylish meme coin built on Solana.
-    </p><img src="https://media.tenor.com/eY45F61Dp7gAAAAC/dog-computer.gif"
-     alt="DogHat Meme Dog"
-     style="max-width: 100%; border-radius: 12px; box-shadow: 0 0 15px cyan;" />
+    </p>
+
+    <img class="gif-image" src="https://media.tenor.com/eY45F61Dp7gAAAAC/dog-computer.gif" alt="DogHat Meme" />
+
     <br />
     <a href="#top" class="back-to-top" data-en="← Back to Top" data-es="← Volver arriba">← Back to Top</a>
-  </div>  <script>
+  </div>
+
+  <script>
     function switchLang(lang) {
       document.querySelectorAll('[data-' + lang + ']').forEach(el => {
         el.textContent = el.getAttribute('data-' + lang);
       });
     }
-  </script></body>
+  </script>
+</body>
 </html>
