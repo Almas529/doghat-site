@@ -1,86 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DogHat – Home</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #000;
+      background-color: #000;
       color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    nav {
-      background: #0a0a0a;
-      padding: 10px 20px;
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #00c3ff;
+      padding: 1rem 2rem;
+      background-color: #000;
+      border-bottom: 2px solid cyan;
     }
     nav a {
-      color: #00c3ff;
-      margin: 0 10px;
+      margin: 0 1rem;
+      color: cyan;
       text-decoration: none;
       font-weight: bold;
     }
-    .lang-switch button {
-      background: #00c3ff;
-      color: #000;
+    .lang-buttons {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .lang-buttons button {
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      background-color: #00e0ff;
       border: none;
       border-radius: 5px;
-      padding: 5px 10px;
-      margin-left: 5px;
       cursor: pointer;
     }
-    .center {
+    .main-box {
+      margin: 3rem auto;
+      padding: 2rem;
+      max-width: 600px;
+      background-color: #111;
+      border: 2px solid cyan;
+      border-radius: 15px;
       text-align: center;
-      padding: 40px 20px;
+      box-shadow: 0 0 15px cyan;
     }
-    .neon {
-      color: #00c3ff;
-      text-shadow: 0 0 10px #00c3ff;
-      font-size: 32px;
+    .main-box img {
+      max-width: 100%;
+      border-radius: 10px;
     }
-    img {
-      margin-top: 20px;
-      max-width: 90%;
-      border-radius: 12px;
-      box-shadow: 0 0 20px #00c3ff;
+    .glow-title {
+      color: cyan;
+      font-size: 2rem;
+      text-shadow: 0 0 10px cyan;
+    }
+    .back-to-top {
+      margin-top: 2rem;
+      color: cyan;
+      font-weight: bold;
+      display: inline-block;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-
-  <nav>
-    <div>
+  <header>
+    <nav>
       <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
       <a href="about.html" data-en="About" data-es="Acerca">About</a>
-      <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenomía">Tokenomics</a>
+      <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</a>
       <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
-    </div>
-    <div class="lang-switch">
+    </nav>
+    <div class="lang-buttons">
       <button onclick="switchLang('en')">EN</button>
       <button onclick="switchLang('es')">ES</button>
     </div>
-  </nav>
-
-  <div class="center">
-    <h1 class="neon" data-en="Welcome to DogHat!" data-es="¡Bienvenido a DogHat!">Welcome to DogHat!</h1>
-    <p data-en="The most stylish meme coin on Solana." data-es="La moneda meme más elegante en Solana.">
-      The most stylish meme coin on Solana.
+  </header>  <div class="main-box">
+    <h1 class="glow-title" data-en="Welcome to DogHat!" data-es="¡Bienvenido a DogHat!">Welcome to DogHat!</h1>
+    <p data-en="The most stylish meme coin built on Solana." data-es="La moneda meme más elegante construida sobre Solana.">
+      The most stylish meme coin built on Solana.
     </p>
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHo1amlkeThqaTk4OXhlY3Bodjc1NGlveTBva2FydWtoMmkwOWZrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="DogHat Shiba">
-  </div>
-
-  <script>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHo1amlkeThqaTk4OXhlY3Bodjc1NGlveTBva2FydWtoMmkwOWZrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="DogHat Shiba GIF" />
+    <br />
+    <a href="#top" class="back-to-top" data-en="← Back to Top" data-es="← Volver arriba">← Back to Top</a>
+  </div>  <script>
     function switchLang(lang) {
       document.querySelectorAll('[data-' + lang + ']').forEach(el => {
         el.textContent = el.getAttribute('data-' + lang);
       });
     }
-  </script>
-
-</body>
+  </script></body>
 </html>
