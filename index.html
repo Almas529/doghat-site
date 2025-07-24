@@ -1,43 +1,29 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DogHat – Home</title>
-  <link rel="icon" href="https://doghatsol.com/favicon.ico" />
   <style>
     body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
       background: #000;
       color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.7;
-      text-align: center;
     }
-    .neon {
-      color: #00c3ff;
-      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff, 0 0 20px #00c3ff;
-    }
-    .section {
-      padding: 30px 20px;
-    }
-    .nav {
+    nav {
+      background: #0a0a0a;
+      padding: 10px 20px;
       display: flex;
-      justify-content: center;
-      gap: 30px;
-      background: #111;
-      padding: 15px 0;
-      box-shadow: 0 0 10px #00c3ff;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #00c3ff;
     }
-    .nav a {
-      color: #00ffb3;
+    nav a {
+      color: #00c3ff;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
-    }
-    .lang-switch {
-      position: fixed;
-      top: 20px;
-      right: 20px;
     }
     .lang-switch button {
       background: #00c3ff;
@@ -48,31 +34,53 @@
       margin-left: 5px;
       cursor: pointer;
     }
+    .center {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .neon {
+      color: #00c3ff;
+      text-shadow: 0 0 10px #00c3ff;
+      font-size: 32px;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00c3ff;
+    }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('es')">Español</button>
-  </div>  <div class="nav">
-    <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-    <a href="about.html" data-en="About" data-es="Acerca">About</a>
-    <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenómica">Tokenomics</a>
-    <a href="ai-tools.html" data-en="AI Tools" data-es="Herramientas IA">AI Tools</a>
-    <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
-  </div>  <div class="section">
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHo1amlkeThqaTk4OXhlY3Bodjc1NGlveTBva2FydWtoMmkwOWZrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="DogHat" width="90%" style="border-radius: 12px; box-shadow: 0 0 15px #00c3ff;" />
-  </div>  <div class="section">
-    <h1 class="neon" data-en="Welcome to DogHat" data-es="Bienvenido a DogHat">Welcome to DogHat</h1>
-    <p data-en="DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙"
-       data-es="DogHat es la moneda meme con una misión. Construido sobre Solana ⚡ | Impulsado por la comunidad 💙">
-      DogHat is the meme coin with a mission. Built on Solana ⚡ | Powered by Community 💙
+
+  <nav>
+    <div>
+      <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+      <a href="about.html" data-en="About" data-es="Acerca">About</a>
+      <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenomía">Tokenomics</a>
+      <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
+    </div>
+    <div class="lang-switch">
+      <button onclick="switchLang('en')">EN</button>
+      <button onclick="switchLang('es')">ES</button>
+    </div>
+  </nav>
+
+  <div class="center">
+    <h1 class="neon" data-en="Welcome to DogHat!" data-es="¡Bienvenido a DogHat!">Welcome to DogHat!</h1>
+    <p data-en="The most stylish meme coin on Solana." data-es="La moneda meme más elegante en Solana.">
+      The most stylish meme coin on Solana.
     </p>
-  </div>  <script>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHo1amlkeThqaTk4OXhlY3Bodjc1NGlveTBva2FydWtoMmkwOWZrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="DogHat Shiba">
+  </div>
+
+  <script>
     function switchLang(lang) {
       document.querySelectorAll('[data-' + lang + ']').forEach(el => {
         el.textContent = el.getAttribute('data-' + lang);
       });
     }
-  </script></body>
+  </script>
+
+</body>
 </html>
