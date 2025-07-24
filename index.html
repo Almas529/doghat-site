@@ -35,12 +35,35 @@
       margin-left: 5px;
       cursor: pointer;
     }
+    .nav {
+      background: #111;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 10px #00c3ff;
+    }
+    .nav a {
+      margin: 0 15px;
+      color: #00c3ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <div class="lang-switch">
     <button onclick="switchLang('en')">English</button>
     <button onclick="switchLang('es')">Español</button>
+  </div>  <div class="nav">
+    <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+    <a href="about.html" data-en="About" data-es="Acerca">About</a>
+    <a href="tokenomics.html" data-en="Tokenomics" data-es="Tokenomía">Tokenomics</a>
+    <a href="ai-tools.html" data-en="AI Tools" data-es="Herramientas AI">AI Tools</a>
+    <a href="community.html" data-en="Community" data-es="Comunidad">Community</a>
   </div>  <div class="section">
     <img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyeHo1amlkeThqaTk4OXhlY3Bodjc1NGlveTBva2FydWtoMmkwOWZrdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mCRJDo24UvJMA/giphy.gif" alt="DogHat" width="90%" style="border-radius: 12px; box-shadow: 0 0 15px #00c3ff;" />
   </div>  <div class="section">
