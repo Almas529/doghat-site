@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DogHat – Community</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .neon {
+      color: #00c3ff;
+      text-shadow: 0 0 5px #00c3ff, 0 0 10px #00c3ff;
+    }
+    a {
+      color: #00c3ff;
+      text-decoration: none;
+    }
+    .lang-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch button {
+      background: #00c3ff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('es')">Español</button>
+  </div>
+
+  <h1 class="neon" data-en="Join the DogHat Community" data-es="Únete a la Comunidad DogHat">Join the DogHat Community</h1>
+
+  <p data-en="Stay connected with us on Telegram, X (Twitter), and more!" 
+     data-es="¡Mantente conectado con nosotros en Telegram, X (Twitter) y más!">
+    Stay connected with us on Telegram, X (Twitter), and more!
+  </p>
+
+  <p data-en="🧢 Telegram Channel:" data-es="🧢 Canal de Telegram:">
+    🧢 Telegram Channel:
+    <br />
+    <a href="https://t.me/doghat_sol" target="_blank">https://t.me/doghat_sol</a>
+  </p>
+
+  <p data-en="🐶 Telegram Group:" data-es="🐶 Grupo de Telegram:">
+    🐶 Telegram Group:
+    <br />
+    <a href="https://t.me/DogHatOfficialGroup" target="_blank">https://t.me/DogHatOfficialGroup</a>
+  </p>
+
+  <p data-en="🐦 Follow us on X (Twitter):" data-es="🐦 Síguenos en X (Twitter):">
+    🐦 Follow us on X (Twitter):
+    <br />
+    <a href="https://x.com/DogHat100" target="_blank">https://x.com/DogHat100</a>
+  </p>
+
+  <br />
+  <a href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+    }
+  </script>
+</body>
+</html>
